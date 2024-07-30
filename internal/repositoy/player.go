@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/Red-Chot/Aula03/internal/entity"
+	"github.com/Red-Chot/simple-rpg-api-Aula03/internal/entity"
 )
 
 type PlayerRepository struct {

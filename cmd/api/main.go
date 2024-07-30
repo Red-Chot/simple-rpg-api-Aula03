@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Red-Chot/Aula03/internal/handler"
-	repository "github.com/Red-Chot/Aula03/internal/repositoy"
-	"github.com/Red-Chot/Aula03/internal/service"
+	"github.com/Red-Chot/simple-rpg-api-Aula03/internal/handler"
+	repository "github.com/Red-Chot/simple-rpg-api-Aula03/internal/repositoy"
+	"github.com/Red-Chot/simple-rpg-api-Aula03/internal/service"
 	_ "github.com/lib/pq"
 )
 

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/Red-Chot/Aula03/internal/entity"
-	repository "github.com/Red-Chot/Aula03/internal/repositoy"
+	"github.com/Red-Chot/simple-rpg-api-Aula03/internal/entity"
+	repository "github.com/Red-Chot/simple-rpg-api-Aula03/internal/repositoy"
 )
 
 type PlayerService struct {
