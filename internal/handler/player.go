@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Red-Chot/simple-rpg-api-Aula03/entity"
-	"github.com/Red-Chot/simple-rpg-api-Aula03/service"
+	"github.com/Red-Chot/simple-rpg-api-Aula03/internal/entity"
+    "github.com/Red-Chot/simple-rpg-api-Aula03/internal/service"
 )
 
 type PlayerHandler struct {
@@ -131,3 +131,16 @@ func (ph *PlayerHandler) SavePlayer(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(result)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

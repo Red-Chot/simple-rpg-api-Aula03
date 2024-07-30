@@ -17,3 +17,9 @@ func NewPlayer(nickname string, life, attack int) *Player {
 		Attack:   attack,
 	}
 }
+
+
+
+
+
+

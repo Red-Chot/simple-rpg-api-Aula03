@@ -1,0 +1,66 @@
+
+POST http://localhost:8080/player
+Content-Type: application/json
+
+{
+    "nickname": "TheClip",
+    "life": 100,
+    "attack": 10
+}
+
+###
+
+
+GET http://localhost:8080/player
+Content-Type: application/json
+
+###
+
+
+POST http://localhost:8080/enemy
+Content-Type: application/json
+
+{
+    "nickname": "Enemy1"
+}
+
+###
+
+
+GET http://localhost:8080/enemy
+Content-Type: application/json
+
+###
+
+
+POST http://localhost:8080/battle
+Content-Type: application/json
+
+{
+    "player": "TheClip",
+    "enemy": "Enemy1"
+}
+
+###
+
+
+GET http://localhost:8080/battles
+Content-Type: application/json
+
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

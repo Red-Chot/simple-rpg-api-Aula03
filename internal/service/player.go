@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/Red-Chot/simple-rpg-api-Aula03/internal/entity"
-	repository "github.com/Red-Chot/simple-rpg-api-Aula03/internal/repositoy"
+	repository "github.com/Red-Chot/simple-rpg-api-Aula03/internal/repository"
 )
 
 type PlayerService struct {
@@ -21,7 +21,7 @@ func (ps *PlayerService) AddPlayer(nickname string, life, attack int) (*entity.P
 		return nil, errors.New("player nickname, life and attack is required")
 	}
 
-	if len(nickname) > 255 {
+	 if len(nickname) > 255 {
 		return nil, errors.New("player nickname cannot exceed 255 characters")
 	}
 
@@ -63,7 +63,7 @@ func (ps *PlayerService) LoadPlayers() ([]*entity.Player, error) {
 	return players, nil
 }
 
-func (ps *PlayerService) DeletePlayer(id string) error {
+ func (ps *PlayerService) DeletePlayer(id string) error {
 	player, err := ps.PlayerRepository.LoadPlayerById(id)
 	if err != nil {
 		fmt.Println(err)
@@ -79,7 +79,7 @@ func (ps *PlayerService) DeletePlayer(id string) error {
 	return nil
 }
 
-func (ps *PlayerService) LoadPlayer(id string) (*entity.Player, error) {
+	func (ps *PlayerService) LoadPlayer(id string) (*entity.Player, error) {
 	player, err := ps.PlayerRepository.LoadPlayerById(id)
 
 	if err != nil {
@@ -138,3 +138,27 @@ func (ps *PlayerService) SavePlayer(id, nickname string, life, attack int) (*ent
 	}
 	return player, nil
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
